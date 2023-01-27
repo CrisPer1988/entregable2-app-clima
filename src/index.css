@@ -1,0 +1,29 @@
+img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+body {
+    /* background-color:rgba(231, 225, 220, 0.911); */
+    background-image: url(./assets/body.jpg);
+    font-family:cursive;
+}
+
+ul  {
+    list-style: none;
+}
+
+li {
+    margin: 20px;
+    transition: transform 0.5s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
