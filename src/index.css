@@ -10,7 +10,8 @@ img:hover {
 }
 
 body {
-    /* background-color:rgba(231, 225, 220, 0.911); */
+    
+    margin: 0;
     background-image: url(./assets/body.jpg);
     font-family:cursive;
 }
