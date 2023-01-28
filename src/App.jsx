@@ -8,6 +8,8 @@ function App() {
   const [weather, setWeather] = useState()
   const [temperature, setTemperature] = useState()
   const [isLoad, setIsLoad] = useState(true)
+ 
+ 
 
   useEffect(() => {
     const success = pos => {
@@ -30,7 +32,7 @@ function App() {
           setWeather(res.data)
           const obj = {
             celsius: (res.data.main.temp - 273.15).toFixed(1),
-            farenheit: ((res.data.main.temp - 273.15) * 9/5 + 32).toFixed(1)
+            farenheit: ((res.data.main.temp - 273.15) * 9/5 + 32).toFixed(1),
           }
           setTemperature(obj)
         })

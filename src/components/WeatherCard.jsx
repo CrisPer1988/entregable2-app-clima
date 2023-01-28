@@ -10,9 +10,11 @@ const [isCelsius, setIsCelsius] = useState(true)
     return (
     <article className='container'>
         <div className='content__header'>
-            <h1>Clima App</h1>
+            <h1 className='tittle'>Clima App</h1>
+            <span>discover<i class='bx bx-down-arrow-alt'></i></span><h3 className='phrase'>Pronostico para ti: Hoy sera tu día de suerte</h3>
             <h2>{weather?.name}, {weather?.sys.country}</h2>
             <img className='img__header' src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}.png`} alt="" />
+            
         </div>
        
         <section className='content__seccion'>
@@ -26,6 +28,7 @@ const [isCelsius, setIsCelsius] = useState(true)
         <footer className='content__footer'>
             <h2 className='temperature'>Temp: {isCelsius ?  temperature?.celsius + "°C"
             : temperature?.farenheit + "°F"}</h2>
+          
             <button className='btn' onClick={handleClick}>Change to {isCelsius ? "°F" : "°C"}</button>
         </footer>
         
