@@ -80,12 +80,11 @@
     width: 100vw;
     position: fixed;
     color: rgb(255, 255, 255);
-    top: 0;
     font-size: 4rem;
     color: #283542;
-    margin-left:  50%;
+    
 
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slidein;
 } 
 
@@ -94,11 +93,12 @@
   @keyframes slidein {
     from {
       margin-top: 100%;
-      width: 100%
+      left: 100%;
+    
     }
   
     to {
       margin-top: 0%;
-      width: 100%;
+     left: 0;
     }
   }
