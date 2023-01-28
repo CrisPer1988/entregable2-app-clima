@@ -9,9 +9,13 @@
     overflow: hidden;
     color: rgb(255, 255, 255);
     text-align: center;
-    
     box-shadow: 4px 4px 4px 2px rgba(1, 1, 1, 1.3);
 
+    transition: box-shadow 0.8s;
+}
+
+.container:hover {
+    box-shadow: 5px 5px 5px 3px white /*rgba(2, 2, 2, 2.3)*/;
 }
 
 .content__seccion {
