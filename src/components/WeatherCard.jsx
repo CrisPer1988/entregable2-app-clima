@@ -16,7 +16,7 @@ const [isCelsius, setIsCelsius] = useState(true)
         </div>
        
         <section className='content__seccion'>
-            <h3 className='description'>{weather?.weather[0].description}</h3>
+            <h3 className='description'>State: {weather?.weather[0].description}</h3>
             <ul className='list__info'>
                 <li><i class='bx bx-wind'></i><span>Wind Speed:</span>{weather?.wind.speed} m/s</li>
                 <li><i class='bx bxs-cloud'></i><span>Clouds:</span>{weather?.clouds.all} %</li>

@@ -1,13 +1,13 @@
 .container {
     max-width: 600px;
     height: 100vh;
-    margin:auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
     overflow: hidden;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     
     box-shadow: 4px 4px 4px 2px rgba(1, 1, 1, 1.3);
@@ -24,7 +24,7 @@
 .content__header{
     margin-bottom: 20px;
     background-color: #34495E;
-    opacity: 0.8;
+    opacity: 0.6;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -34,13 +34,16 @@
 }
 
 .img__header {
-   border: 2px solid white;
+   border: 2px solid black;
    border-radius: 50%;
    margin-bottom: 20px;
+   background-color: aliceblue;
+  
 }
 
 .description {
-    color: black;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
     font-size: 20px;
 
     text-decoration: underline;

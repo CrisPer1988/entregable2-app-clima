@@ -23,6 +23,8 @@ ul  {
 li {
     margin: 20px;
     transition: transform 0.5s;
+    font-size: 20px;
+    color: rgb(71, 0, 0);
 }
 
 li:hover {
