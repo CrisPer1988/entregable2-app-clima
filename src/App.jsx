@@ -8,8 +8,7 @@ function App() {
   const [weather, setWeather] = useState()
   const [temperature, setTemperature] = useState()
   const [isLoad, setIsLoad] = useState(true)
- 
- 
+
 
   useEffect(() => {
     const success = pos => {
@@ -17,6 +16,7 @@ function App() {
         lat: pos.coords.latitude,
         lon: pos.coords.longitude
       }
+
       setCoords(obj)
     }
     navigator.geolocation.getCurrentPosition(success)
@@ -41,7 +41,7 @@ function App() {
     }
   }, [coords])
 
-  console.log(weather);
+  //console.log(weather);
 
   return (
     <div className="App">

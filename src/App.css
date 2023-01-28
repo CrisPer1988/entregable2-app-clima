@@ -9,35 +9,61 @@
     overflow: hidden;
     color: rgb(255, 255, 255);
     text-align: center;
-    box-shadow: 4px 4px 4px 2px rgba(1, 1, 1, 1.3);
+    
 
-    transition: box-shadow 0.8s;
+    transition: box-shadow 0.8s, transform 0.5s;
 }
 
 .container:hover {
-    box-shadow: 5px 5px 5px 3px rgba(1, 1, 1, 1.3);
+    box-shadow: 5px 5px 40px rgb(150, 149, 70);   
+    
+   
 }
 
 .tittle {
-    font-size: 35px;
-    -webkit-text-fill-color: rgb(26, 40, 168);;
-    -webkit-text-stroke: 3px rgb(0, 0, 0);
-    letter-spacing: 0.5rem;
+    font-size: 40px;
+   
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px  rgb(219, 221, 198);
+    letter-spacing: 1rem;
     transition: transform 1s;
 }
 
 .tittle:hover {
-    transform: translateY(20px);
+    transform: translateY(10px);
     
+    
+}
+
+.arrow {
+    display: block;
+    white-space: nowrap;
+    width: 20ch;
+    animation: translate 5s steps(20) infinite,
+    cursor infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes translate {
+0% { width: 0;}
+25% { width: 25%;}
+50% { width: 50%;}
+75% { width: 75%;}
+100% { width: 100%;}
+
 }
 
 .phrase {
     color: transparent;
-    transition: color 1s;
+    transition: color 1s, background-color 1s;
+    font-size: 25px;
 }
 
 .phrase:hover {
-    color: black;
+    color: red;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow:hidden;
 }
 
 .content__seccion {
@@ -45,7 +71,6 @@
     opacity: 0.8;
     background-color: #85929E ;
 }
-
 
 .content__header{
     margin-bottom: 5px;
@@ -55,9 +80,6 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    
-    
- 
 }
 
 .img__header {
@@ -81,7 +103,6 @@
     letter-spacing: 0.2rem;
     margin-left: 20px;
     font-family:Arial, Helvetica, sans-serif;
-    
     font-weight:900;
     -webkit-text-fill-color: rgb(0, 0, 0);
     -webkit-text-stroke: 1px rgb(255, 255, 255);
@@ -102,7 +123,7 @@
 }
 
 .loading {
-    background-image:url(./assets/body.jpg);
+    background-image:url(./assets/backBody.jpg);
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -112,12 +133,11 @@
 .loading h1{ 
     width: 100vw;
     position: fixed;
+    left: 0;
+    top: 50%;
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    color: #283542;
-    
-
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: slidein;
 } 
 
@@ -125,13 +145,13 @@
   
   @keyframes slidein {
     from {
-      margin-top: 100%;
-      left: 100%;
+      margin-left: 100%;
+      top: 50%;
     
     }
   
     to {
-      margin-top: 0%;
-     left: 0;
+      margin-left: 0%;
+     top: 50%;
     }
   }

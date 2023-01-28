@@ -11,8 +11,8 @@ const [isCelsius, setIsCelsius] = useState(true)
     <article className='container'>
         <div className='content__header'>
             <h1 className='tittle'>Clima App</h1>
-            <span>discover<i class='bx bx-down-arrow-alt'></i></span><h3 className='phrase'>Pronostico para ti: Hoy sera tu día de suerte</h3>
-            <h2>{weather?.name}, {weather?.sys.country}</h2>
+            <span>Hover here<i class='bx bx-down-arrow-alt arrow'></i></span><h3 className='phrase'>Pronostico para ti: Hoy sera tu día de suerte</h3>
+            <h2>"{weather?.name}, {weather?.sys.country}"</h2>
             <img className='img__header' src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}.png`} alt="" />
             
         </div>
