@@ -70,6 +70,8 @@
 
 .loading {
     background-image:url(./assets/body.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
 }
