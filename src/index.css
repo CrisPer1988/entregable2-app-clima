@@ -12,7 +12,6 @@ img:hover {
 body {
     margin: 0;
     background-image: url(./assets/backBody.jpg);
-    /* background-repeat:repeat-y(1); */
     background-size: cover;
     background-position: center;
    

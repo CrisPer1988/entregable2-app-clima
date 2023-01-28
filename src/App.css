@@ -16,13 +16,10 @@
 
 .container:hover {
     box-shadow: 5px 5px 40px rgb(150, 149, 70);   
-    
-   
 }
 
 .tittle {
-    font-size: 40px;
-   
+    font-size: 40px;  
     -webkit-text-fill-color: rgb(0, 0, 0);
     -webkit-text-stroke: 1px  rgb(219, 221, 198);
     letter-spacing: 1rem;
@@ -30,9 +27,7 @@
 }
 
 .tittle:hover {
-    transform: translateY(10px);
-    
-    
+    transform: translateY(10px);   
 }
 
 .arrow {
@@ -83,18 +78,16 @@
 }
 
 .img__header {
-   border: 2px solid black;
-   border-radius: 50%;
-   margin-bottom: 10px;
-   background-color: aliceblue;
-  
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: aliceblue;
 }
 
 .description {
     color: rgb(0, 0, 0);
     background-color: aliceblue;
     font-size: 20px;
-
     text-decoration: underline;
 }
 
@@ -115,7 +108,6 @@
 .btn {
     border-radius: 10px;
     padding: 0.5rem;
-    
     width: 80%;
     background-color: #34495E;
     color: aliceblue;
@@ -143,15 +135,14 @@
 
 
   
-  @keyframes slidein {
+@keyframes slidein {
     from {
-      margin-left: 100%;
-      top: 50%;
-    
-    }
+    margin-left: 100%;
+    top: 50%;
+}
   
-    to {
-      margin-left: 0%;
-     top: 50%;
+to {
+    margin-left: 0%;
+    top: 50%;
     }
-  }
+}
