@@ -14,8 +14,6 @@ body {
     background-image: url(./assets/backBody.jpg);
     background-size: cover;
     background-position: center;
-   
-    
 }
 
 ul  {
@@ -35,4 +33,8 @@ li:hover {
 
 h1, h2, h3, h4{
     margin: 5px;
+}
+
+a {
+    text-decoration: none;
 }

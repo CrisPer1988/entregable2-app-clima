@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
+import Social from './Social'
+
 
 const WeatherCard = ({weather, temperature}) => {
 const [isCelsius, setIsCelsius] = useState(true)
 
     const handleClick = () => setIsCelsius(!isCelsius)
 
-    
- 
     return (
     <article className='container'>
         <div className='content__header'>
@@ -31,7 +31,7 @@ const [isCelsius, setIsCelsius] = useState(true)
           
             <button className='btn' onClick={handleClick}>Change to {isCelsius ? "°F" : "°C"}</button>
         </footer>
-        
+        <Social />
     </article>
   )
 }

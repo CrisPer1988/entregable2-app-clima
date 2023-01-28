@@ -41,7 +41,6 @@ function App() {
     }
   }, [coords])
 
-  //console.log(weather);
 
   return (
     <div className="App">
@@ -53,6 +52,7 @@ function App() {
      :
     <WeatherCard weather={weather} temperature={temperature} />
     }
+   
     </div>
   )
 }
