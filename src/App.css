@@ -9,7 +9,6 @@
     overflow: hidden;
     color: rgb(255, 255, 255);
     text-align: center;
-    
 
     transition: box-shadow 0.8s, transform 0.5s;
 }
@@ -22,8 +21,6 @@
     font-size: 3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
 
 .arrow {
     display: block;
@@ -40,7 +37,6 @@
 50% { width: 50%;}
 75% { width: 75%;}
 100% { width: 100%;}
-
 }
 
 .phrase {
@@ -82,12 +78,10 @@
     border-radius: 50%;
     margin-bottom: 10px;
     background-color: #85929E;
-   
 }
 
 .description {
-    color: rgb(0, 0, 0);
-    
+    color: rgb(0, 0, 0); 
     font-size: 30px;
     text-decoration: underline;
 }
@@ -110,7 +104,7 @@
 .btn {
     border-radius: 10px;
     padding: 0.5rem;
-    width: 80%;
+    width: 50%;
     background-color: #000000;
     color: aliceblue;
     cursor: pointer;

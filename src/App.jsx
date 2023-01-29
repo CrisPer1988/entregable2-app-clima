@@ -45,14 +45,13 @@ function App() {
   return (
     <div className="App">
 { 
-     isLoad ?
-     <div className='loading'>
-     <h1>Loading...</h1>
-     </div>
-     :
+    isLoad ?
+    <div className='loading'>
+    <h1>Loading...</h1>
+    </div>
+    :
     <WeatherCard weather={weather} temperature={temperature} />
     }
-   
     </div>
   )
 }
