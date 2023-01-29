@@ -18,17 +18,12 @@
     box-shadow: 5px 5px 40px rgb(150, 149, 70);   
 }
 
-.tittle {
-    font-size: 40px;  
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke: 1px  rgb(219, 221, 198);
-    letter-spacing: 1rem;
-    transition: transform 1s;
+.city {
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.tittle:hover {
-    transform: translateY(10px);   
-}
+
 
 .arrow {
     display: block;
@@ -51,7 +46,8 @@
 .phrase {
     color: transparent;
     transition: color 1s, background-color 1s;
-    font-size: 25px;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .phrase:hover {
@@ -62,15 +58,19 @@
 }
 
 .content__seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    margin: 0;
     opacity: 0.8;
     background-color: #85929E ;
 }
 
 .content__header{
-    margin-bottom: 5px;
     background-color: #34495E;
-    opacity: 0.6;
+    opacity: 0.9;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -81,18 +81,20 @@
     border: 2px solid black;
     border-radius: 50%;
     margin-bottom: 10px;
-    background-color: aliceblue;
+    background-color: #85929E;
+   
 }
 
 .description {
     color: rgb(0, 0, 0);
-    background-color: aliceblue;
-    font-size: 20px;
+    
+    font-size: 30px;
     text-decoration: underline;
 }
 
 .temperature {
     display: inline;
+    font-size: 2.5rem;
     letter-spacing: 0.2rem;
     margin-left: 20px;
     font-family:Arial, Helvetica, sans-serif;
@@ -109,9 +111,10 @@
     border-radius: 10px;
     padding: 0.5rem;
     width: 80%;
-    background-color: #34495E;
+    background-color: #000000;
     color: aliceblue;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .loading {
@@ -149,7 +152,5 @@ to {
     display: flex;
     gap: 5rem;
     font-size: 30px;
-    margin-top: 20px;
-    color: aliceblue;
 }
 
