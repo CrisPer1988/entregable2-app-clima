@@ -81,7 +81,7 @@
 }
 
 .description {
-    color: rgb(0, 0, 0); 
+    color: #F7F3EF ; 
     font-size: 30px;
     text-decoration: underline;
 }
@@ -93,8 +93,8 @@
     margin-left: 20px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:900;
-    -webkit-text-fill-color: rgb(0, 0, 0);
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: #FFC300;
+    
 }
 
 .content__footer {
@@ -106,7 +106,8 @@
     padding: 0.5rem;
     width: 50%;
     background-color: #000000;
-    color: aliceblue;
+    color: #F7F3EF ;
+    font-size: 15px;
     cursor: pointer;
     margin-top: 10px;
 }

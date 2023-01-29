@@ -14,7 +14,7 @@ const [isCelsius, setIsCelsius] = useState(true)
             <h2 className='temperature'>{isCelsius ?  temperature?.celsius + "°C"
             : temperature?.farenheit + "°F"}</h2>
             <img className='img__header' src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}.png`} alt="" />
-            <h3 className='description'>State: {weather?.weather[0].description}</h3>
+            <h3 className='description'>{weather?.weather[0].description}</h3>
             <button className='btn' onClick={handleClick}>Change to {isCelsius ? "°F" : "°C"}</button>  
             <ul className='list__info'>
                 <li><i class='bx bx-wind'></i><span>Wind Speed:</span>{weather?.wind.speed} m/s</li>

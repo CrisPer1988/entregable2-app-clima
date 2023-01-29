@@ -14,8 +14,9 @@ body {
     background-image: url(./assets/backBody.jpg);
     background-size: cover;
     background-position: center;
-
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    user-select: none;
 }
 
 ul  {
@@ -26,7 +27,7 @@ li {
     margin: 20px;
     transition: transform 0.5s;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: #F7F3EF ;
 }
 
 li:hover {
