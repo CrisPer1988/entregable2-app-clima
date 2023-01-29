@@ -10,7 +10,7 @@ const [isCelsius, setIsCelsius] = useState(true)
     return (
     <article className='container'>
         <section className='content__header'>
-            <h1 className='city'>"{weather?.name}, {weather?.sys.country}"</h1>
+            <h1 className='city'>{weather?.name}, {weather?.sys.country}</h1>
             <h2 className='temperature'>{isCelsius ?  temperature?.celsius + "°C"
             : temperature?.farenheit + "°F"}</h2>
             <img className='img__header' src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}.png`} alt="" />
