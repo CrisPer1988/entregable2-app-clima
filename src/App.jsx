@@ -22,12 +22,13 @@ function App() {
     navigator.geolocation.getCurrentPosition(success)
   }, [])
 
+
   useEffect(() => {
     if(coords){
-      const APIKey = `3d91f2ca4206912d288f144679159740`
-      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${APIKey}`
+      const APIKEY = `3d91f2ca4206912d288f144679159740`
+      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${APIKEY}`
     
-      axios.get(url)
+      axios.get(URL)
         .then(res => {
           setWeather(res.data)
           const obj = {
